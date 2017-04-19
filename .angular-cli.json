@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "metamap",
       "styles": [
+        "../node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css",
         "styles.scss"
       ],
       "scripts": [],

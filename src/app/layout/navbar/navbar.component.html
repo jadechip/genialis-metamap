@@ -1,3 +1,16 @@
-<p>
-  navbar works!
-</p>
+<header class="header">    
+
+    <div class="header__logo hidden-sm-down">
+        <h1><a [routerLink]="['']">Metamap</a></h1>
+    </div>
+
+    <ul class="header__nav">
+        <li *ngFor="let item of navItems; let i = index" [ngClass]="item.linkClass">
+            <a *ngIf="item.link" [routerLink]="item.link">
+                <i *ngIf="item.iconClass" [ngClass]="item.iconClass"></i>                
+            </a>
+            <img *ngIf="item.imgSrc" [src]="item.imgSrc" alt="">
+        </li>
+    </ul>
+    
+</header>
