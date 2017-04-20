@@ -1,3 +1,15 @@
-<p>
-  sidebar works!
-</p>
+<aside class="navigation" [class.navigation--toggled]="sidebarVisible">
+    <ul class="navigation__menu">
+        <li routerLinkActive="active"><a [routerLink]="['/map']"><i class="zmdi zmdi-map"></i> Map</a></li>
+       
+        <li routerLinkActive="active">
+            <a (click)="toggleNavigationSub('Forms', $event)"><i class="zmdi zmdi-collection-text"></i> Form</a>
+
+            <ul class="navigation__sub" [@toggleHeight]="navigationSubState.Forms">
+                <li routerLinkActive="active"><a [routerLink]="['/form/form-1']">Form 1</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/form/form-2']">Form 2</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/form/form-3']">Form 3</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>

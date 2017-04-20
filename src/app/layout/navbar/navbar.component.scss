@@ -1,13 +1,12 @@
 // Import Bootstrap and App variables and mixins
 @import "../../../assets/scss/inner-imports";
 
-
 // Header Base
 .header {
   position: fixed;
   width: 100%;
   height: $header-height;
-  background-color: $green;
+  background-color: $indigo;
   box-shadow: $header-shadow;
   color: $white;
   padding: 0 2rem;
