@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { MapComponent } from "./map.component";
+import { MapViewerComponent } from './map-viewer/map-viewer.component';
 
 const MAP_ROUTE = [
     { path: '', component: MapComponent }
@@ -10,7 +11,8 @@ const MAP_ROUTE = [
 
 @NgModule ({
     declarations: [
-        MapComponent        
+        MapComponent,
+        MapViewerComponent        
     ],
     imports: [
         CommonModule,
