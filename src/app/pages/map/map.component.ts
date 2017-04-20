@@ -16,13 +16,15 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
 
+    this.mapLoader.loadMap();
+
     // Retrieve posts from the MapLoader Service
-    this.mapLoader.loadMap().subscribe(payload => {
-      this.mapInfo = payload[0];
-      this.mapData = payload[1];
-      console.log("This is the map info", this.mapInfo);   
-      console.log("This is the map data", this.mapData);
-    });
+    // this.mapLoader.loadMap().subscribe(payload => {
+    //   this.mapInfo = payload[0];
+    //   this.mapData = payload[1];
+    //   console.log("This is the map info", this.mapInfo);   
+    //   console.log("This is the map data", this.mapData);
+    // });
 
   }
 

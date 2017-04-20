@@ -40,7 +40,7 @@ export class NavbarComponent implements OnInit {
             link: "",
             linkClass: "header__nav__profile",
             iconClass: "",
-            imgSrc: "./assets/img/avatar.jpg"
+            imgSrc: ""
         }                                    
     ];
         
