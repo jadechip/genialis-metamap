@@ -53,6 +53,11 @@
   margin: 0 (-$grid-gutter-width-base/2);
 }
 
+.dashboard__fullwidth__column {
+  width: 100%;
+  padding: 0 $grid-gutter-width-base/2;
+}
+
 .dashboard__column {
   float: left;
   padding: 0 $grid-gutter-width-base/2;
