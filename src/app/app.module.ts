@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { appRouting } from './app.routing';
 import { MapLoaderService } from './services/map-loader/map-loader.service';
+import { MapGeneratorService } from './services/map-generator/map-generator.service';
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +20,7 @@ import { AppComponent } from './app.component';
     HttpModule,    
     appRouting
   ],
-  providers: [MapLoaderService],
+  providers: [MapLoaderService, MapGeneratorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
