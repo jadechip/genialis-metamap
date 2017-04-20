@@ -20,9 +20,12 @@
       "prefix": "metamap",
       "styles": [
         "../node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css",
+        "../node_modules/escher-vis/css/dist/builder.min.css",
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/escher-vis/js/dist/escher.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
