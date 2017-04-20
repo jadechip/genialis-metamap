@@ -9,16 +9,21 @@ import { MapLoaderService } from '../../services/map-loader.service';
 })
 export class MapComponent implements OnInit {
 
-  mapData: any;
+  mapInfo: any = {};
+  mapData: any = {};
 
   constructor(private mapLoader: MapLoaderService) { }
 
   ngOnInit() {
+
     // Retrieve posts from the MapLoader Service
-    this.mapLoader.loadMap().subscribe(data => {
-      this.mapData = data;
-      console.log("Map data recieved", data);
+    this.mapLoader.loadMap().subscribe(payload => {
+      this.mapInfo = payload[0];
+      this.mapData = payload[1];
+      console.log("This is the map info", this.mapInfo);   
+      console.log("This is the map data", this.mapData);
     });
+
   }
 
 }
