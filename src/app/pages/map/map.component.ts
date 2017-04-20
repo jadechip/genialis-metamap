@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MapLoaderService } from '../../services/map-loader.service';
+import { MapLoaderService } from '../../services/map-loader/map-loader.service';
 
 
 @Component({

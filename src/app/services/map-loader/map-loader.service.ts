@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import * as d3 from 'd3';
 
 @Injectable()
 export class MapLoaderService {
