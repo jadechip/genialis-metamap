@@ -1,7 +1,7 @@
 <aside class="navigation" [class.navigation--toggled]="sidebarVisible">
     <ul class="navigation__menu">
         <li routerLinkActive="active"><a [routerLink]="['/map']"><i class="zmdi zmdi-map"></i> Map</a></li>
-       
+        <li routerLinkActive="active"><a [routerLink]="['/statistics']"><i class="zmdi zmdi-widgets"></i> Statistics</a></li>
         <li routerLinkActive="active">
             <a (click)="toggleNavigationSub('Forms', $event)"><i class="zmdi zmdi-collection-text"></i> Form</a>
 

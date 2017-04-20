@@ -21,12 +21,6 @@ export class NavbarComponent implements OnInit {
         {
             link: "['']",
             linkClass: "",
-            iconClass: "zmdi zmdi-email",
-            imgSrc: ""
-        },
-        {
-            link: "['']",
-            linkClass: "",
             iconClass: "zmdi zmdi-notifications",
             imgSrc: ""
         },
